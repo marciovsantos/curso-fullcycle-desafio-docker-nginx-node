@@ -19,19 +19,19 @@ services:
       context: ./node
       dockerfile: Dockerfile
     command: node index.js
-    image: oikram/node:prod
+    image: marciovsantos/node:prod
     container_name: app
     networks:
       - network
-    volumes:
-      - ./node:/usr/src/app
+    #volumes:
+    #  - ./node/:/usr/src/app
     depends_on:
       - db
   web: 
     build:
       context: ./nginx
       dockerfile: Dockerfile
-    image: oikram/nginx:prod
+    image: marciovsantos/nginx:prod
     container_name: web
     networks:
       - network
