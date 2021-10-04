@@ -1,4 +1,4 @@
-# Entrega do desafio do curso fullcycle - docker - nginx com node
+# Entrega do desafio do curso fullcycle - docker - nginx com node e mysql
 
 - execute docker-compose up -d --build
 - acesse http://localhost:8080
